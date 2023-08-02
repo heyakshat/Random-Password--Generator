@@ -1,0 +1,23 @@
+#Random Password Generator By Using Python Programming Language 
+
+import tkinter as tk  
+import random
+import string
+
+def generate_password():
+    password_lenght= int(lenght_entry.get())
+    chracters=string.ascii_letters + string.digits + string.punctuation
+    password='',join(random.choice(characters) for_in range(password_length))
+    password_display.config(text=password)
+window=tk.Tk90
+window.title("Password Generator")
+length_label=tk.Label(window, text="Password Length :")
+length_label.pack()
+length_entry=tk.Entry(window)
+length_entry.pack()
+generate_button=tk.Button(window,text="Generate Your Password",command=generte_password)
+generate_button.pack()
+password_display=tk.label(window,text="")
+password_display.pack()
+
+window.mainloop()
